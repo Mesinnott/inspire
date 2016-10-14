@@ -17,17 +17,20 @@ body {
   background-color: rgba(00, 00, 00, 0.4);  
   color: snow; 
   width: 200px;
+  font-size: 12px;
   border-radius: 10px;
+  padding: 5px;
 }
 .fa-times{
     color:red;
 }
 .mybutton{
-    border-radius: 10px;
+    border: none;
     font-size: 20px;
     background: transparent;
     mix-blend-mode: exclusion;
     color:snow;
+
 }
 .weather{
     color: snow;
@@ -56,13 +59,19 @@ body {
 }
 .fa-check-circle{
     color: green;
+    /*text-decoration: line-through;*/
 }
 .fa-plus{
     color:green;
 }
 .inputField{
     background: transparent;
+    border: none;
+    color: navajowhite
 }
 li{
     list-style: none;
+}
+.strikethrough{
+    text-decoration: line-through;
 }
