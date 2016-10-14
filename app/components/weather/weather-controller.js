@@ -19,9 +19,7 @@
 
 		var iconUrl = `http://openweathermap.org/img/w/${icon}.png`
 
-		var template = `<div class = 'container-fluid'>
-							<div class='row'> 
-								<div class='col-xs-2 col-xs-offset-10 weatherBox'>
+		var template = `	<div class='col-xs-2 col-xs-offset-8 weatherBox'>
 								<div class='row'>
 								<h4> Today in ${city}:<h4>
 								</div>
@@ -33,9 +31,7 @@
 								<div class='col-xs-6'><p> ${description}<image src='${iconUrl}' alt=''><p>
 									</div>
 									</div>
-									</div>
-								</div>
-							</div>`
+									</div>`
 
 		$('#weather').append(template)
 

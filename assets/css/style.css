@@ -16,6 +16,11 @@ body {
 .toDo{
   background-color: rgba(00, 00, 00, 0.4);  
   color: snow; 
+  width: 200px;
+  border-radius: 10px;
+}
+.fa-times{
+    color:red;
 }
 .mybutton{
     border-radius: 10px;
@@ -46,4 +51,18 @@ body {
     justify-content: center;
     align-items: flex-end;
 }
-.
+.fa-circle-o{
+    color: blue;
+}
+.fa-check-circle{
+    color: green;
+}
+.fa-plus{
+    color:green;
+}
+.inputField{
+    background: transparent;
+}
+li{
+    list-style: none;
+}
