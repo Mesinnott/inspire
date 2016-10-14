@@ -75,3 +75,21 @@ li{
 .strikethrough{
     text-decoration: line-through;
 }
+.clock{
+    color:snow;
+    background-color: rgba(00, 00, 00, 0.4);
+    font-size: 50px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 60%;
+    border-radius: 10px;
+}
+.clock-container{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
