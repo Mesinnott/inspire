@@ -7,8 +7,8 @@
 		quote= JSON.parse(quote)
 		var quoteText= quote.quote
 		var author = quote.author
-		var quoteTemplate=`<h2>Ponder this today: "${quoteText}"</h2>`
-		var authorTemplate=`<h5>--${author}</h5>`
+		var quoteTemplate=`<h4>Ponder this today:</h4><h5> "${quoteText}"</h5>`
+		var authorTemplate=`<h4>--${author}</h4>`
 		$('#quote').html(quoteTemplate)
 
 		$('#quote').on('mouseenter', function (e){
@@ -17,7 +17,7 @@
 
 			$('#quote').html(authorTemplate)
 		})
-		$('#quote').on('mouseleave', function (e){
+		$('#quote').on('mouseout', function (e){
 			console.log('clicksy')
 			e.preventDefault()
 
