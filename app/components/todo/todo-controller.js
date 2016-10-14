@@ -10,12 +10,6 @@
 	// There are two methods getTodos returns an array
 	// saveTodos accepts an array and stores it to your local storage
 	
-
-
-
-
-
-
 	var printTodos = function(){
 		var tasks= todoService.getTodos()
 		var taskTemplate= `Total Tasks on the docket: ${tasks.length}`

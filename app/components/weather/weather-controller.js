@@ -19,12 +19,23 @@
 
 		var iconUrl = `http://openweathermap.org/img/w/${icon}.png`
 
-		var template = `<h3>Today's weather in ${city}:<h3>
-						<h4> <button class='btn' id='f'>${tempF} F</button>
-							<button class='btn' id='c'>${tempC} C</button>
-							${main} </h4>
-						<h5><image src='${iconUrl}' alt=''></h5>
-						<h5> Specifically: ${description}</h5>`
+		var template = `<div class = 'container-fluid'>
+							<div class='row'> 
+								<div class='col-xs-2 col-xs-offset-10 weatherBox'>
+								<div class='row'>
+								<h4> Today in ${city}:<h4>
+								</div>
+							<div class= 'row'>
+								<div class='col-xs-6'>
+									<p> <button class='mybutton' id='f'>${tempF}&deg; F</button>
+									<button class='mybutton' id='c'>${tempC}&deg; C</button>   </p>
+									</div>
+								<div class='col-xs-6'><p> ${description}<image src='${iconUrl}' alt=''><p>
+									</div>
+									</div>
+									</div>
+								</div>
+							</div>`
 
 		$('#weather').append(template)
 
