@@ -2,6 +2,7 @@
 
 	var wc = this;
 	var weatherService = new WeatherService();
+	
 
 	weatherService.getWeather(function (weather) {
 		weather = JSON.parse(weather)
@@ -16,6 +17,8 @@
 		var tempC = temp - 273.15
 		tempC = Math.floor(tempC)
 		tempF = Math.floor(tempF)
+		// var userCity= prompt('city', 'Boise')
+
 
 		var iconUrl = `http://openweathermap.org/img/w/${icon}.png`
 

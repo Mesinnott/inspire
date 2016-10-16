@@ -1,4 +1,14 @@
 
+// var userName=''
+// var userCity=''
+function setUpAlerts(){
+    var userName= prompt('name?', 'Turd Ferguson')
+    // var userCity= prompt('city', 'Boise')
+    $('#welcome').append(`Welcome, ${userName}`)
+    // return userCity
+}
+
+
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -8,6 +18,7 @@ function startTime() {
     s = checkTime(s);
     document.getElementById('clock').innerHTML =
     h + ":" + m + ":" + s;
+    //  + '<br>' + 'wElcome, ' + userName
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
@@ -16,3 +27,6 @@ function checkTime(i) {
 }
 
 startTime()
+
+
+

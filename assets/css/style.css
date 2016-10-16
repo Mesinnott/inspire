@@ -79,17 +79,23 @@ li{
     color:snow;
     background-color: rgba(00, 00, 00, 0.4);
     font-size: 50px;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    /*display:flex;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    /*align-items: center;*/
     width: 60%;
     border-radius: 10px;
+    text-align: center;
 }
 .clock-container{
     display:flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-
+    flex-direction: column;
+    width: 60%;
+}
+.welcome{
+    font-size: 20px;
+    text-align: center;
 }

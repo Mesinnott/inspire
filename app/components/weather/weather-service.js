@@ -1,7 +1,15 @@
 function WeatherService() {
+	debugger
 	var url = 'http://bcw-getter.herokuapp.com/?url=';
-	var url2 = 'http://api.openweathermap.org/data/2.5/weather?q=boise&&APPID=bd82255fd0a21fa1238699b9eda2ee35'
-	var apiUrl = url + encodeURIComponent(url2);
+	var userCity= prompt('city')
+	console.log('blaskfa' + userCity)
+	var url2 = 'http://api.openweathermap.org/data/2.5/weather?q='
+	var url3='&&APPID=bd82255fd0a21fa1238699b9eda2ee35'
+	var url4= url2 + userCity + url3
+	
+	localStorage.setItem('weather', '')
+
+	var apiUrl = url + encodeURIComponent(url4);
 
 
 	this.getWeather = function (callWhenDone) {
