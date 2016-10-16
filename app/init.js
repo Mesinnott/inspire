@@ -1,16 +1,13 @@
 
-// var userName=''
-// var userCity=''
+
 function setUpAlerts(){
     var userName= prompt('name?', 'Turd Ferguson')
-    // var userCity= prompt('city', 'Boise')
-    // console.log('blacrh===' +.h)
     var today = new Date();
     var hr = today.getHours()
     var greet = greeting(hr)
-    console.log(greet)
+    // console.log(greet)
     $('#welcome').append(`${greet}, ${userName}`)
-    // return userCity
+
 }
 
 
@@ -22,11 +19,30 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     var g = greeting(h)
+    var military=''
+
+    if (flag%2!=0){
+        military = '24hr'
+        if(h>12){
+            h=h-12
+        }
+    } else{military = '12 hr'}
+    $('#toggle').html(military)
     document.getElementById('clock').innerHTML =
     h + ":" + m + ":" + s;
-    //  + '<br>' + 'wElcome, ' + userName
     var t = setTimeout(startTime, 500);
 }
+ var flag =1
+
+
+$('#toggle').on('click',function(e){
+    e.preventDefault()
+    debugger
+    flag ++
+    console.log(flag)
+
+})
+
 
 
 
@@ -34,6 +50,8 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
+
+
 function greeting(i){
     var greeting = ''
     if (i<6){
