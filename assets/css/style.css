@@ -81,7 +81,7 @@ li{
 }
 .clock{
     color:snow;
-    
+    text-shadow: 2px 2px #000000;
     /*background-color: rgba(00, 00, 00, 0.4);*/
     font-size: 50px;
     /*display:flex;*/
