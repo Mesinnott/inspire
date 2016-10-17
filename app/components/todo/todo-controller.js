@@ -65,7 +65,8 @@
 	$('#taskList').on('click','.fa-times', function(e){
 		e.preventDefault();
 		deleteTodo(this.id)
-		printTodos()
+		$(this).parents('li').remove()
+		// printTodos()
 	})
 
 	$('#taskList').on('click','.fa-circle-o', function(e){

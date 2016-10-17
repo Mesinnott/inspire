@@ -1,7 +1,16 @@
 
 
 function setUpAlerts(){
-    var userName= prompt('name?', 'Turd Ferguson')
+    var localName= localStorage.getItem('Name')
+    var userName = ''
+    if(localName){
+        userName=localName
+    }else{
+    userName= prompt('name?', 'Turd Ferguson')
+    localStorage.setItem('Name', userName)
+    }
+
+
     var today = new Date();
     var hr = today.getHours()
     var greet = greeting(hr)
