@@ -26,9 +26,9 @@ body {
 }
 .mybutton{
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     background: transparent;
-    mix-blend-mode: exclusion;
+    /*mix-blend-mode: exclusion;*/
     color:snow;
 
 }
@@ -103,4 +103,15 @@ li{
     font-size: 10px;
     background: transparent;
     border: none;
+    margin: 3px;
+    width: 60px;
+}
+.task{
+    background: transparent;
+    border:none;
+
+}
+.strike{
+    text-decoration: line-through;
+    color: grey;
 }

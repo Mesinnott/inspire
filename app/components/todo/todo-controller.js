@@ -15,7 +15,7 @@
 		var taskTemplate= `Total Tasks on the Docket: ${tasks.length}<hr>`
 		for(var i=0; i<tasks.length; i++){
 			var thisTask=tasks[i]
-			taskTemplate += `<li id='${i}'><i id='${i}' class="fa fa-circle-o" aria-hidden="true"></i> ${i+1}: ${thisTask}<i id='${i}'class="fa fa-times" aria-hidden="true"></i></li>`
+			taskTemplate += `<li id='${i}'><i id='${i}' class="fa fa-circle-o" aria-hidden="true"></i> <button class= 'task' id='${i}'>${i+1}: ${thisTask}</button><i id='${i}'class="fa fa-times" aria-hidden="true"></i></li>`
 		}
 		$('#taskList').html(taskTemplate)
 		// $('.fa-check-circle').hide()
@@ -57,8 +57,13 @@
     }
 });
 
+	// $('#tasklist').on('click', '.task', function(e){
+	// 	e.preventDefault();
+	// 	$(this).toggleClass('fa-circle-o  fa-check-circle ')
+	// })
 	
 	$('#taskList').on('click','.fa-times', function(e){
+		e.preventDefault();
 		deleteTodo(this.id)
 		printTodos()
 	})
