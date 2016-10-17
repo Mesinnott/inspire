@@ -99,7 +99,7 @@ li{
     align-items: center;
     flex-direction: column;
     width: 60%;
-     text-shadow: 10px 10px #000000;
+     text-shadow: 2px 2px #000000;
 }
 .welcome{
     font-size: 20px;
