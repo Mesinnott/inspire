@@ -1,6 +1,6 @@
 function WeatherService() {
 	debugger
-	var url = 'http://bcw-getter.herokuapp.com/?url=';
+	var url = 'https://bcw-getter.herokuapp.com/?url=';
 	var userCity= prompt('city')
 	console.log('blaskfa' + userCity)
 	var url2 = 'http://api.openweathermap.org/data/2.5/weather?q='
